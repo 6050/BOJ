@@ -11,7 +11,7 @@ if __name__ == '__main__':
             table[i][j] = cypher[idx]
             idx += 1
 
-    for i in range(len(table)):
+    for i in range(row):
         if i % 2 != 0:
             table[i].reverse()
 
