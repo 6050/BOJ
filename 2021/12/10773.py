@@ -1,4 +1,6 @@
+import sys
 from collections import deque
+input = sys.stdin.readline
 
 if __name__ == '__main__':
 
@@ -8,7 +10,7 @@ if __name__ == '__main__':
         num = int(input())
         if num != 0:
             list.append(num)
-        if num == 0:
+        else:
             list.pop()
 
     print(sum(list))
