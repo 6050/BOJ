@@ -1,20 +1,20 @@
 if __name__ == '__main__':
 
-    col = int(input())
+    C = int(input())
     cypher = input()
-    row = len(cypher) // col
-    table = [[""] * col for _ in range(row)]
+    R = len(cypher) // C
+    table = [[""] * C for _ in range(R)]
 
     idx = 0
-    for i in range(row):
-        for j in range(col):
+    for i in range(R):
+        for j in range(C):
             table[i][j] = cypher[idx]
             idx += 1
 
-    for i in range(row):
+    for i in range(R):
         if i % 2 != 0:
             table[i].reverse()
 
-    for j in range(col):
-        for i in range(row):
+    for j in range(C):
+        for i in range(R):
             print(table[i][j], end="")
